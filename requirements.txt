@@ -1,0 +1,9 @@
+pyodbc
+python-dotenv
+langchain
+langchain-community
+langchain_groq
+streamlit
+pandas 
+fuzzywuzzy
+sqlalchemy
