@@ -28,7 +28,8 @@ class PromptManager:
                     NOTE - rethink all the above instruction to provide the below response
                 
                 - "reasoning": A brief explanation of why the question is or isn't related to the database. The reasoning should include terms like 'database', 'table', 'column', etc., but should not explicitly expose actual table or column names.
-                - "is_related": Based on the reasoning i.e in "reasoning" and revist all the above instruction to provide the response, provide value as - true/false — Indicates whether the question is related to the database.                - "reframed_question": If the request is not related to administrative tasks, suggest a polite and relevant way the user can rephrase their question. Focus on the business context rather than database specifics. For example, if the user asks about data deletion, suggest they focus on what information or records they are trying to access or modify instead.
+                - "is_related": Based on the reasoning i.e in "reasoning" and revist all the above instruction to provide the response, provide value as - true/false — Indicates whether the question is related to the database. 
+                - "reframed_question": If "is_related" is "false" smiply reject the request and If the request is not related to administrative tasks, suggest a polite and relevant way the user can rephrase their question. Focus on the business context rather than database specifics. For example, if the user asks about data deletion, suggest they focus on what information or records they are trying to access or modify instead.
 
                 Note: Ensure that the user feels comfortable to reframe their request in a way that suits the scope of the AI’s capabilities, without directly referring to any database details or technical terms. Do not include the prompt instructions in the final output.
 

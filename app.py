@@ -14,7 +14,7 @@ class BusinessInsightApp:
     def GetBusinessInsights(self):
         ## Application details
         st.title("Business Insights")  # Correct way to set the title
-        st.write("Connection String:", self.db_connection_string)  # Correct way to display the connection string
+        # st.write("Connection String:", self.db_connection_string)  # Correct way to display the connection string
         user_query = st.chat_input("Enter Your business query!")
         if user_query:
             st.text(user_query)
